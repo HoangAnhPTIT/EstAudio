@@ -187,3 +187,151 @@
 2025-04-01 16:04:30,318 - INFO - 127.0.0.1 - - [01/Apr/2025 16:04:30] "GET /view HTTP/1.1" 200 -
 2025-04-01 16:04:30,360 - INFO - 127.0.0.1 - - [01/Apr/2025 16:04:30] "GET /static/css/style.css HTTP/1.1" 200 -
 2025-04-01 16:04:30,368 - INFO - 127.0.0.1 - - [01/Apr/2025 16:04:30] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:06:56,277 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:56] "GET /bookmarks/AUDIO_Test_02.mp3 HTTP/1.1" 200 -
+2025-04-01 16:06:56,299 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:56] "[35m[1mGET /uploads/AUDIO_Test_02.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:06:57,255 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:57] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:06:57,288 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:06:57,297 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:06:58,087 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:58] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:06:58,102 - INFO - 127.0.0.1 - - [01/Apr/2025 16:06:58] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:27,181 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:27] "GET /bookmarks/AUDIO_Test_05.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:27,202 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:27] "[35m[1mGET /uploads/AUDIO_Test_05.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:29,786 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:29] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:29,802 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:29] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:29,812 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:29] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:32,283 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:32] "GET /bookmarks/AUDIO_Test_02.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:32,304 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:32] "[35m[1mGET /uploads/AUDIO_Test_02.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:32,314 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:32] "[35m[1mGET /uploads/AUDIO_Test_02.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:34,505 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:34] "GET /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:34,526 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:34] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:34,536 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:34] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:07:37,043 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:37] "DELETE /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:37,050 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:37] "GET /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:37,684 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:37] "DELETE /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:07:37,692 - INFO - 127.0.0.1 - - [01/Apr/2025 16:07:37] "GET /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:13:09,314 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:13:09,331 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:09] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:09,871 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:09] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:09,874 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:09] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:10,516 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:10] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:10,565 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:10] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:10,839 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:10] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:11,198 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:11] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:11,553 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:11] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:11,925 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:11] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:11,930 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:11] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:13:12,213 - INFO - 127.0.0.1 - - [01/Apr/2025 16:13:12] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:14:42,827 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:14:42,828 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:14:42,837 - INFO -  * Restarting with stat
+2025-04-01 16:14:43,238 - WARNING -  * Debugger is active!
+2025-04-01 16:14:43,243 - INFO -  * Debugger PIN: 899-068-470
+2025-04-01 16:14:43,541 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:43] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:14:43,574 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:43] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:14:43,584 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:14:46,665 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:46] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:14:46,680 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:46] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:14:46,695 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:46] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:14:47,821 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:47] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:14:51,543 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:51] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:14:51,574 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:14:51,576 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:14:53,274 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:53] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:14:53,302 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:14:53,303 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:14:54,865 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:54] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:14:54,898 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-01 16:14:54,899 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:54] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:14:56,458 - INFO - 127.0.0.1 - - [01/Apr/2025 16:14:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:15:01,756 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:01] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:15:01,786 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:15:01,786 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:15:03,192 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:03] "GET /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:15:03,201 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:03] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:15:04,858 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:04] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:15:04,865 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:04] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:15:37,300 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:37] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:15:37,337 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:15:37,337 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:15:38,287 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:38] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:15:38,299 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:38] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:15:42,187 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:42] "GET /bookmarks/AUDIO_Test_04.mp3 HTTP/1.1" 200 -
+2025-04-01 16:15:42,210 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:42] "[35m[1mGET /uploads/AUDIO_Test_04.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:15:42,251 - INFO - 127.0.0.1 - - [01/Apr/2025 16:15:42] "[35m[1mGET /uploads/AUDIO_Test_04.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:16:00,659 - INFO - 127.0.0.1 - - [01/Apr/2025 16:16:00] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:16:38,013 - INFO - 127.0.0.1 - - [01/Apr/2025 16:16:38] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:16:38,359 - INFO - 127.0.0.1 - - [01/Apr/2025 16:16:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:16:38,359 - INFO - 127.0.0.1 - - [01/Apr/2025 16:16:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:18:17,800 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:17] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:18:17,835 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:18:17,835 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:17] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:18:18,368 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:18] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:18:18,398 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:18:18,399 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:18:19,300 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:19] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:18:19,314 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:19] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:19,323 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:19] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:20,635 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:20] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:20,659 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:20] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:20,667 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:20] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:35,224 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:35] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:18:35,258 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:18:35,258 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:35] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:18:36,123 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:36] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:18:36,136 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:36] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:37,302 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:37] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:37,602 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:37] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:37,605 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:37] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:43,892 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:43] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:18:43,923 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:18:43,924 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:18:45,197 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:45] "GET /bookmarks/AUDIO_Test_03.mp3 HTTP/1.1" 200 -
+2025-04-01 16:18:45,218 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:45] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:46,294 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:46] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:46,298 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:46] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:18:46,531 - INFO - 127.0.0.1 - - [01/Apr/2025 16:18:46] "[35m[1mGET /uploads/AUDIO_Test_03.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:26,111 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:19:26,112 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:19:26,115 - INFO -  * Restarting with stat
+2025-04-01 16:19:26,629 - WARNING -  * Debugger is active!
+2025-04-01 16:19:26,635 - INFO -  * Debugger PIN: 899-068-470
+2025-04-01 16:19:26,961 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:26] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:19:27,009 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:27] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:19:27,009 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:19:28,404 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:28] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:19:28,423 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:28] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:29,188 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:29] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:29,794 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:29] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:29,799 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:29] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:31,642 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:31] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:34,200 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:34] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:56,449 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:56] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:19:56,488 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:19:56,488 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:56] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-01 16:19:58,118 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:58] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:19:58,118 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:58] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:59,477 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:59] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:19:59,484 - INFO - 127.0.0.1 - - [01/Apr/2025 16:19:59] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:20:08,841 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:08] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:20:08,873 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:20:08,873 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:20:09,908 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:09] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:20:09,934 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:20:09,937 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:20:12,200 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:20:12,201 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:20:12,204 - INFO -  * Restarting with stat
+2025-04-01 16:20:12,635 - WARNING -  * Debugger is active!
+2025-04-01 16:20:12,640 - INFO -  * Debugger PIN: 899-068-470
+2025-04-01 16:20:14,474 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:14] "GET /view HTTP/1.1" 200 -
+2025-04-01 16:20:14,507 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-01 16:20:14,509 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-01 16:20:15,905 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:15] "GET /bookmarks/AUDIO_Test_01.mp3 HTTP/1.1" 200 -
+2025-04-01 16:20:16,919 - INFO - 127.0.0.1 - - [01/Apr/2025 16:20:16] "[35m[1mGET /uploads/AUDIO_Test_01.mp3 HTTP/1.1[0m" 206 -
+2025-04-01 16:20:32,920 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:20:32,921 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:20:32,923 - INFO -  * Restarting with stat
