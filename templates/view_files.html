@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>View Files</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
     <div class="container mt-5">
         <h1 class="mb-4">Audio Files</h1>
         <table class="table table-hover">
             <thead class="table-light">
-                <tr><th>File Name</th></tr>
+                <tr>
+                    <th>File Name</th>
+                </tr>
             </thead>
             <tbody>
                 {% for file in files %}
-                <tr><td><a href="#" onclick="openAudioModal('{{ file }}')">{{ file }}</a></td></tr>
+                <tr>
+                    <td><a href="#" onclick="openAudioModal('{{ file }}')">{{ file }}</a></td>
+                </tr>
                 {% endfor %}
             </tbody>
         </table>
@@ -32,12 +38,68 @@
                 </div>
                 <div class="modal-body">
                     <audio id="audioPlayer" controls class="w-100 mb-3"></audio>
-                    <div id="bookmarksList" class="bookmark-container"></div>
-                    <div class="input-group mt-3">
-                        <input type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
-                        <button class="btn btn-primary" onclick="addBookmark()">Add</button>
+                    <div class="audio-controls mb-3">
+                        <div class="input-group w-50 mx-auto mb-2">
+                            <span class="input-group-text">Skip</span>
+                            <input type="number" id="skipTime" class="form-control" value="1" min="0.1" step="0.1">
+                            <select id="skipMode" class="form-select" style="max-width: 120px;">
+                                <option value="minutes">Minutes</option>
+                                <option value="seconds">Seconds</option>
+                            </select>
+                        </div>
+                        <div class="btn-group w-100 mt-2" role="group">
+                            <button class="btn btn-outline-primary" onclick="skipBackward()">
+                                <i class="bi bi-rewind"></i> Back
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="togglePlayPause()">
+                                <i class="bi bi-play" id="playPauseIcon"></i> <span id="playPauseText">Play</span>
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="skipForward()">
+                                Forward <i class="bi bi-fast-forward"></i>
+                            </button>
+                        </div>
                     </div>
-                    <button class="btn btn-outline-danger mt-2 w-100" onclick="clearBookmarks()">Clear All Bookmarks</button>
+                    <div id="subtitleDisplay" class="mb-3"></div>
+                    <button id="toggleSubtitles" class="btn btn-outline-secondary mb-3 w-100">Enable Subtitles</button>
+                    <!-- Added view mode toggle -->
+                    <div class="d-flex justify-content-end mb-2">
+                        <button id="toggleViewMode" class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-list"></i> Switch to Columns
+                        </button>
+                    </div>
+                    <div id="bookmarksList" class="bookmark-container vertical-mode">
+                        <div id="part1Bookmarks">
+                            <h6>Part 1: Photographs</h6>
+                            <div class="bookmark-section"></div>
+                        </div>
+                        <div id="part2Bookmarks">
+                            <h6>Part 2: Question-Response</h6>
+                            <div class="bookmark-section"></div>
+                        </div>
+                        <div id="part3Bookmarks">
+                            <h6>Part 3: Conversations</h6>
+                            <div class="bookmark-section"></div>
+                        </div>
+                        <div id="part4Bookmarks">
+                            <h6>Part 4: Talks</h6>
+                            <div class="bookmark-section"></div>
+                        </div>
+                    </div>
+                    <div class="input-group mt-3">
+                        <select id="bookmarkPart" class="form-select" style="max-width: 150px;">
+                            <option value="1">Part 1</option>
+                            <option value="2">Part 2</option>
+                            <option value="3">Part 3</option>
+                            <option value="4">Part 4</option>
+                        </select>
+                        <input type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
+                        <button class="btn btn-primary" id="addBookmarkBtn" onclick="addBookmark()">
+                            <span class="button-text">Add</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <button class="btn btn-outline-danger mt-2 w-100" onclick="clearBookmarks()">Clear All
+                        Bookmarks</button>
                 </div>
             </div>
         </div>
@@ -46,4 +108,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 </html>

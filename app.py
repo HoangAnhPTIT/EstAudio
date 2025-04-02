@@ -17,8 +17,13 @@ def init_db():
     try:
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
+        # Updated table schema to include 'part'
         c.execute('''CREATE TABLE IF NOT EXISTS bookmarks 
-                     (id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT, bookmark_name TEXT, timestamp REAL)''')
+                     (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                      filename TEXT, 
+                      bookmark_name TEXT, 
+                      timestamp REAL, 
+                      part INTEGER)''')  # Added part column
         conn.commit()
     except sqlite3.Error as e:
         logger.error(f"Database initialization failed: {str(e)}")
@@ -72,28 +77,30 @@ def manage_bookmarks(filename):
     try:
         if request.method == 'POST':
             data = request.json
-            if not data or 'name' not in data or 'time' not in data:
+            if not data or 'name' not in data or 'time' not in data or 'part' not in data:
                 logger.error(f"Invalid bookmark data for {filename}: {data}")
                 return jsonify({'error': 'Invalid data'}), 400
-            c.execute("INSERT INTO bookmarks (filename, bookmark_name, timestamp) VALUES (?, ?, ?)",
-                     (filename, data['name'], data['time']))
+            # Updated to include part in the insert
+            c.execute("INSERT INTO bookmarks (filename, bookmark_name, timestamp, part) VALUES (?, ?, ?, ?)",
+                     (filename, data['name'], data['time'], data['part']))
             conn.commit()
             return jsonify({'message': 'Bookmark added', 'id': c.lastrowid}), 200
         
-        elif request.method == 'DELETE':  # Delete bookmark(s)
+        elif request.method == 'DELETE':
             data = request.json
-            if data and 'id' in data:  # Delete single bookmark
+            if data and 'id' in data:
                 c.execute("DELETE FROM bookmarks WHERE id = ? AND filename = ?", (data['id'], filename))
                 if c.rowcount == 0:
                     return jsonify({'error': 'Bookmark not found'}), 404
-            else:  # Clear all bookmarks for this file
+            else:
                 c.execute("DELETE FROM bookmarks WHERE filename = ?", (filename,))
             conn.commit()
             return jsonify({'message': 'Bookmark(s) deleted'}), 200
         
-        c.execute("SELECT id, bookmark_name, timestamp FROM bookmarks WHERE filename = ?", (filename,))
+        # Updated to select part as well
+        c.execute("SELECT id, bookmark_name, timestamp, part FROM bookmarks WHERE filename = ?", (filename,))
         bookmarks = c.fetchall()
-        return jsonify([{'id': b[0], 'name': b[1], 'time': b[2]} for b in bookmarks])
+        return jsonify([{'id': b[0], 'name': b[1], 'time': b[2], 'part': b[3]} for b in bookmarks])
     
     except sqlite3.Error as e:
         logger.error(f"Database error for {filename}: {str(e)}")
