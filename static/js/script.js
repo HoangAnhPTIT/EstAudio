@@ -37,6 +37,8 @@ bookmarkNameInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault(); // Prevent any default form submission behavior
         addBookmark();
+
+        event.target.blur(); // Remove focus from the input field after adding a bookmark
     }
 });
 
