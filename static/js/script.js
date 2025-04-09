@@ -137,7 +137,11 @@ async function loadBookmarks(filename) {
 
         const playBtn = document.createElement('button');
         playBtn.textContent = `${bm.name} (${formatSeconds(Math.round(bm.time.toFixed(2)))}s)`;
-        playBtn.onclick = () => audioPlayer.currentTime = bm.time;
+        playBtn.onclick = () => {
+            audioPlayer.currentTime = bm.time;
+            audioPlayer.play();
+            if (isRecognizing) startRecognition();
+        }
 
         const deleteIcon = document.createElement('i');
         deleteIcon.className = 'bi bi-trash text-danger';
@@ -147,6 +151,8 @@ async function loadBookmarks(filename) {
         div.appendChild(deleteIcon);
 
         sections[bm.part].appendChild(div);
+
+        
     });
 }
 
