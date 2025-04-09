@@ -136,7 +136,7 @@ async function loadBookmarks(filename) {
         div.className = 'bookmark-item';
 
         const playBtn = document.createElement('button');
-        playBtn.textContent = `${bm.name} (${bm.time.toFixed(2)}s)`;
+        playBtn.textContent = `${bm.name} (${formatSeconds(Math.round(bm.time.toFixed(2)))}s)`;
         playBtn.onclick = () => audioPlayer.currentTime = bm.time;
 
         const deleteIcon = document.createElement('i');
@@ -149,6 +149,15 @@ async function loadBookmarks(filename) {
         sections[bm.part].appendChild(div);
     });
 }
+
+function formatSeconds(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    // Pad with leading zeros if needed
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
 
 function initRecognition() {
     if (!('webkitSpeechRecognition' in window)) {
