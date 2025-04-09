@@ -147,6 +147,10 @@ async function loadBookmarks(filename) {
         div.appendChild(deleteIcon);
 
         sections[bm.part].appendChild(div);
+
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        }
     });
 }
 
