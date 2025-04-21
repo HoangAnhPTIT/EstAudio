@@ -10,6 +10,8 @@ services:
     volumes:
       - .:/app
       - db_data:/app/db
+      - /root/source/EstAudio/static:/app/static:ro  # Read-only for static
+      - /root/source/EstAudio/uploads:/app/uploads  # Read-write for uploads
     ports:
       - "5555:5000"
     networks:
