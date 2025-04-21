@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/app
       - db_data:/app/db
-    expose:
+    ports:
       - "5000:5000"
     networks:
       - app-network   
