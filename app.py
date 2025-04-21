@@ -57,7 +57,7 @@ def upload_files():
 @app.route('/view')
 def view_files():
     try:
-        files = [f for f in os.listdir(UPLOAD_FOLDER) if f.endswith(('.mp3', '.wav'))]
+        files = sorted([f for f in os.listdir(UPLOAD_FOLDER) if f.endswith(('.mp3', '.wav'))])
         return render_template('view_files.html', files=files)
     except Exception as e:
         logger.error(f"Error listing files: {str(e)}")
