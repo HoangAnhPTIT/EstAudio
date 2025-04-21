@@ -1,7 +1,7 @@
 version: "3.9"
 
 volumes:
-  db_data: {}
+  db_data:
 
 services:
   web:
@@ -9,7 +9,7 @@ services:
     container_name: flask_app
     volumes:
       - .:/app
-      - db_data:/app/database.db
+      - db_data:/app/db
     expose:
       - "5000"
     networks:

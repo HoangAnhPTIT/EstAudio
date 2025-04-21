@@ -13,9 +13,11 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 logging.basicConfig(filename='app.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+dbPath = '/app/db/database.db'
+
 def init_db():
     try:
-        conn = sqlite3.connect('database.db')
+        conn = sqlite3.connect(dbPath)
         c = conn.cursor()
         # Updated table schema to include 'part'
         c.execute('''CREATE TABLE IF NOT EXISTS bookmarks 
@@ -71,7 +73,7 @@ def uploaded_file(filename):
 
 @app.route('/bookmarks/<filename>', methods=['GET', 'POST', 'DELETE'])
 def manage_bookmarks(filename):
-    conn = sqlite3.connect('database.db')
+    conn = sqlite3.connect(dbPath)
     c = conn.cursor()
     
     try:
